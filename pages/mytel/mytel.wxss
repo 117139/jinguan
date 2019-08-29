@@ -1,0 +1,90 @@
+/* pages/mytel/mytel.wxss */
+page{
+	background-color: #fff;
+}
+.container{
+	background-color: #fff;
+	
+}
+.tel_form{
+	width: 100%;
+	padding: 0 28rpx;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.telbox{
+	width: 100%;
+	height: 104rpx;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #eee;
+}
+.iconshouji{
+	font-size: 30rpx;
+	color: #aaa;
+}
+.quhao{
+	width: 130rpx;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30rpx;
+	color: #333;
+}
+.quhao .iconnext-copy{
+	font-size: 22rpx;
+	margin-left: 10rpx;
+}
+.hxian{
+	width:1rpx;
+	height:38rpx;
+	background:rgba(238,238,238,1);
+	margin: 0 30rpx;
+}
+.tel_int{
+	min-width: 0;
+	flex: 1;
+	font-size: 30rpx;
+}
+.fasong{
+	width:258rpx;
+	height:78rpx;
+	background:rgba(94,204,194,1);
+	border-radius:10rpx;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size:30rpx;
+	color: #fff;
+}
+.yzmbox{
+	width: 100%;
+	height: 104rpx;
+	display: flex;
+	align-items: center;
+	margin-bottom: 178rpx;
+}
+.yzm_int{
+	min-width: 0;
+	flex: 1;
+	height: 104rpx;
+	border-bottom: 1px solid #eee;
+	padding-left: 48rpx;
+	font-size: 30rpx;
+}
+.sub_btn{
+	width:693rpx;
+	height:80rpx;
+	background:rgba(241,241,243,1);
+	border-radius:10rpx;
+	font-size:30rpx;
+	color: #bbb;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.sub_btn.ok{
+	background:rgba(94,204,194,1);
+	color: #fff;
+}

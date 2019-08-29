@@ -1,0 +1,93 @@
+/* pages/myStoList/myStoList.wxss */
+page{
+	background-color: #f1f2f4;
+}
+.container{
+	background-color: #f1f2f4;
+	
+}
+.main{
+	width: 100%;
+	padding:28rpx;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.sl_tit{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 93rpx;
+	border-bottom: 1px solid #eee;
+}
+.tit_one{
+	color: #999;
+	font-size: 30rpx;
+	padding-bottom: 20rpx;
+	border-bottom: 7rpx solid transparent;
+}
+.tit_one.cur{
+	color: #333;
+	border-bottom: 7rpx solid #75CEC6;
+}
+.order_one{
+	background-color: #fff;
+	width: 100%;
+	border-radius: 10rpx;
+	overflow: hidden;
+	margin-bottom: 28rpx;
+}
+.order_tit{
+	display: flex;
+	align-items: center;
+	padding: 0 33rpx;
+	height: 80rpx;
+	position: relative;
+	color: #999;
+	font-size: 26rpx;
+	border-bottom: 1px solid #eee;
+}
+.tit_bg{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 78rpx;
+	height: 80rpx;
+}
+.o_body{
+	width: 100%;
+	padding: 30rpx 36rpx 20rpx;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-bottom: 1rpx solid #eee;
+}
+.o_name{
+	color: #333;
+	font-size: 30rpx;
+	margin-bottom: 18rpx;
+}
+.o_tip{
+	height: 48rpx;
+	display: flex;
+	align-items: center;
+	font-size: 26rpx;
+	color: #999;
+}
+.o_tip image{
+	width: 26rpx;
+	height: 26rpx;
+	margin-right: 13rpx;
+}
+.o_footer{
+	width: 100%;
+	height: 72rpx;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 34rpx;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}

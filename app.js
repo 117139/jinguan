@@ -35,5 +35,11 @@ App({
   },
   globalData: {
     userInfo: null
-  }
+  },
+	jump(e){
+		console.log(e)
+		wx.navigateTo({
+			url:e.currentTarget.dataset.url
+		})
+	}
 })

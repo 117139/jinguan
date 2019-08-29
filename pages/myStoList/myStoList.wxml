@@ -1,0 +1,36 @@
+<!--pages/myStoList/myStoList.wxml-->
+<view class="container">
+	<view class="sl_tit">
+		<view class="tit_one {{sl_type==0?'cur':''}}" data-idx="0" bindtap="sl_typefuc">全部</view>
+		<view class="tit_one {{sl_type==1?'cur':''}}" data-idx="1"  bindtap="sl_typefuc">提交</view>
+		<view class="tit_one {{sl_type==2?'cur':''}}" data-idx="2"  bindtap="sl_typefuc">无效</view>
+		<view class="tit_one {{sl_type==3?'cur':''}}" data-idx="3"  bindtap="sl_typefuc">完成</view>
+	</view>
+	<view class="main">
+		<view class="order_one"  wx:for="{{datalist}}" wx:for-index="idx" wx:for-item="item" wx:key="idx">
+			<view class="order_tit">
+				<image class="tit_bg" src="../../static/images/images/sto_03.png"></image>
+				订单编号：1204567890789
+			</view>
+			<view class="o_body">
+				<view class="o_name">旧金山-蒙特雷-卡梅尔-圣西蒙-洛杉矶</view>
+				<view class="o_tip">
+					<image src="../../static/images/sto_04_03.png"></image>联系人：张云 151xxxx5678
+				</view>
+				<view class="o_tip">
+					<image src="../../static/images/sto_04_06.png"></image>出发日期 : 2019-09-26
+
+				</view>
+				<view class="o_tip">
+					<image src="../../static/images/sto_04_08.png"></image>出行人数 : 12人
+				</view>
+			</view>
+			<view class="o_footer">
+				<view class="fz26 c9">提交时间：2019-08-23</view>
+				<view wx:if="{{item.type==0}}" class="fz26 cDAB26C">提交</view>
+				<view wx:if="{{item.type==1}}" class="fz26 cE42929">无效</view>
+				<view wx:if="{{item.type==2}}" class="fz26 c75CEC6">完成</view>
+			</view>
+		</view>
+	</view>
+</view>

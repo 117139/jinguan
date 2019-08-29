@@ -1,0 +1,35 @@
+<!--pages/sto/sto.wxml-->
+<view class="container">
+	<image class="stobg" src="../../static/images/images/sto_bg_02.jpg"></image>
+	<form class="sto_form" bindsubmit="formSubmit">
+		<view class="sto_v">
+			<view class="sto_v_name">目的地</view><input type="text" name="sto" />
+		</view>
+		<picker mode="date" value="{{date}}" start="" end="" bindchange="bindDateChange">
+			<view class="sto_v">
+				<view class="sto_v_name">出行日期</view><input type="text" name="time" disabled value="{{date}}" />
+			</view>
+		</picker>
+		<view class="sto_v">
+			<view class="sto_v_name">出行人数</view><input type="text" name="num" />
+		</view>
+		<picker bindchange="bindPickerChange" range-key="name" value="{{index}}" range="{{array}}">
+			<view class="sto_v">
+				<view class="sto_v_name">酒店标准</view>
+				<input class="hidden" name="bz" value="{{array[index].name}}"/>
+				<view class="sto_bz">{{array[index].name?array[index].name:'请选择'}}<text class="iconfont iconnext"></text></view>
+			</view>
+		</picker>
+		<view class="sto_v">
+			<view class="sto_v_name">您的姓名</view><input type="text" name="name" />
+		</view>
+		<view class="sto_v">
+			<view class="sto_v_name">您的手机</view><input type="text" name="tel" />
+		</view>
+		<view class="sto_qt">
+			<view class="s_qt_tit">其他要求</view>
+			<textarea class="sto_other" placeholder="请输入您要填写的内容" name="other" id="" cols="30" rows="10"></textarea>
+		</view>
+		<button class="sub_btn" form-type="submit">提交</button>
+	</form>
+</view>

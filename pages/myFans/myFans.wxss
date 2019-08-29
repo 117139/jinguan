@@ -1,0 +1,57 @@
+/* pages/myFans/myFans.wxss */
+page{
+	background-color: #f8f8f9;
+	
+}
+.container{
+	background-color: #f8f8f9;
+	width: 100%;
+	padding: 20rpx 28rpx;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.main{
+	width: 100%;
+	background-color: #fff;
+	border-radius: 10rpx;
+	overflow: hidden;
+}
+.fans_one{
+	width: 100%;
+	padding: 31rpx;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-bottom: 1px solid #eee;
+	display: flex;
+}
+.fans_one:last-child{
+	border-bottom: 0;
+}
+.fans_img{
+	width: 96rpx;
+	height: 96rpx;
+	border-radius: 50%;
+	margin-right: 22rpx;
+}
+.fans_msg{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.fans_name{
+	color: #333;
+	font-size: 30rpx;
+}
+.fans_time{
+	color: #999;
+	font-size: 26rpx;
+}
+.fans_type{
+	color: #35BCB7;
+	font-size: 26rpx;
+	display: flex;
+	align-items: center;
+}

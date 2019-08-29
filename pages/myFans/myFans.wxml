@@ -1,0 +1,13 @@
+<!--pages/myFans/myFans.wxml-->
+<view class="container">
+	<view class="main">
+		<view class="fans_one" wx:for="{{fans}}" wx:for-index="idx" wx:for-item="item" wx:key="idx">
+			<image class="fans_img" src="../../static/images/tx.png"></image>
+			<view class="fans_msg">
+				<view class="fans_name">{{item.name}}</view>
+				<view class="fans_time">{{item.time}}</view>
+			</view>
+			<view class="fans_type">邀请成功</view>
+		</view>
+	</view>
+</view>

@@ -1,13 +1,57 @@
 {
   "pages": [
+    "pages/my/my",
+    "pages/mymm/mymm",
+    "pages/myFans/myFans",
+    "pages/myStoList/myStoList",
+    "pages/mytel/mytel",
+    "pages/sto/sto",
+    "pages/DEST/DEST",
     "pages/index/index",
+    "pages/index1/index",
     "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#75CEC6",
+    "navigationBarTitleText": "金冠旅游",
+    "navigationBarTextStyle": "white"
   },
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#DAB26C",
+		"list": [
+			{
+			  "pagePath": "pages/index/index",
+			  "text": "首页",
+			  "iconPath": "/static/images/1_1.png",
+			  "selectedIconPath": "/static/images/1.png"
+			},
+			{
+			  "pagePath": "pages/DEST/DEST",
+			  "text": "目的地",
+			  "iconPath": "/static/images/1_1.png",
+			  "selectedIconPath": "/static/images/1.png"
+			},
+			{
+			  "pagePath": "pages/sto/sto",
+			  "text": "定制",
+			  "iconPath": "/static/images/1_1.png",
+			  "selectedIconPath": "/static/images/1.png"
+			},
+			{
+			  "pagePath": "pages/index/index",
+			  "text": "签证",
+			  "iconPath": "/static/images/1_1.png",
+			  "selectedIconPath": "/static/images/1.png"
+			},
+			{
+			  "pagePath": "pages/my/my",
+			  "text": "我的",
+			  "iconPath": "/static/images/1_1.png",
+			  "selectedIconPath": "/static/images/1.png"
+			}
+		]
+	},
   "sitemapLocation": "sitemap.json"
 }

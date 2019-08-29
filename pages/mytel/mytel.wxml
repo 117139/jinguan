@@ -1,0 +1,20 @@
+<!--pages/mytel/mytel.wxml-->
+<view class="container">
+	<form  class="tel_form"  bindsubmit="formSubmit">
+		<view class="telbox">
+			<text class="iconfont iconshouji"></text>
+			<picker bindchange="bindPickerChange" range-key="code" value="{{index}}" range="{{dataList}}">
+				<input class="hidden" type="text" name="quhao" value="{{dataList[index].code?dataList[index].code:'86'}}"/>
+				<view class="quhao">+{{dataList[index].code?dataList[index].code:'86'}}<text class="iconfont iconnext-copy"></text></view>
+			</picker>
+			<view class="hxian"></view>
+			<input type="text" class="tel_int" name="tel" placeholder="输入手机号" />
+		</view>
+			<view class="yzmbox">
+				<input type="text" class="yzm_int" name="code" placeholder="输入验证码" />
+				<view class="fasong">发送验证码</view>
+			</view>
+		<button class="sub_btn ok" form-type="submit">提交</button>
+	</form>
+	
+</view>

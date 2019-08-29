@@ -1,0 +1,96 @@
+/* pages/sto/sto.wxss */
+page{
+	width: 100%;
+	overflow-y: auto!important;
+	background-color: #5eccc2;
+}
+.container{
+	min-height: 100%;
+	height: auto;
+	/* display: flex;
+	flex-direction: column;
+	align-items: center; */
+	position: relative;
+	background-color: #5eccc2;
+}
+.stobg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 807rpx;
+	z-index: 0;
+}
+.sto_form{
+	position: absolute;
+	top: 311rpx;
+	left: 28rpx;
+	width: 694rpx;
+	padding: 16rpx 34rpx 53rpx;
+	margin-bottom: 30px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #fff;
+	box-shadow:0px 5rpx 50rpx 0px rgba(140,140,140,0.7);
+	border-radius:16rpx;
+}
+.sto_v{
+	width: 100%;
+	height: 78rpx;
+	border-bottom: 1px solid #eee;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.sto_v_name{
+	color: #BBBBBB;
+	font-size: 30rpx;
+	width: 130rpx;
+}
+.s_qt_tit{
+	font-size:24rpx;
+	color: #DAB26C;
+	line-height: 68rpx;
+	margin-top: 4rpx;
+}
+.sto_other{
+	width: 626rpx;
+	height: 251rpx;
+	border: 1px solid #aaa;
+	border-radius: 10rpx;
+	padding: 25rpx 20rpx;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 26rpx;
+	margin-bottom: 32rpx;
+}
+.sub_btn{
+	width:628rpx;
+	height:84rpx;
+	background:rgba(218,178,108,1);
+	border-radius:42rpx;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 28rpx;
+	color: #fff;
+}
+.sto_bz{
+	display: flex;
+	color: #bbb;
+	font-size: 26rpx;
+	
+}
+.sto_bz .iconfont{
+	font-size: 26rpx;
+}
+.sto_v input{
+	flex: 1;
+	min-width: 0;
+}
+.hidden{
+	display: none;
+}
